@@ -16,6 +16,7 @@ def download_video(video_url):
     stream.download(download_folder, "video.mp4")
     print("download complete")
 
+# scene, cropped_scene, video 폴더 내의 임시 파일 삭제
 def delete_all_files_in_dir(file_path):
     if(os.path.exists(file_path)):
         for file in os.scandir(file_path):
