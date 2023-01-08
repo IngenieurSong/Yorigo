@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 
-
+# Flask 서버 실행
 @app.route("/post", methods=["POST"])
 def devide_video():
     if request.method == "POST":
